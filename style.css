@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Ronoto');
+
+.grid-2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #101214;
+    color: #7A7C80;
+}
+h2, .white{
+    color: #fff;
+}
+a{
+    color: #7A7C80;
+    text-decoration: none;
+}
+.section-1 img{
+    
+    width: rem;
+    height: 22rem;
+}
+button{
+   margin-left: 45px;
+    color: ghostwhite;
+    background-color: hotpink;
+    border: hotpink;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    transition: 3s;
+}
+button:hover{
+    background-color: crimson;
+    transform: rotate(360deg);
+}
+.section-1 img:hover{
+    height: 25rem;
+    transition: 0.5s ease-in-out;
+}
+.section-1{
+    padding-top: 10vh;
+    text-align: center;
+}
+.section-1 p{
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+    margin: 0;
+}
+.section-1 h2{
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+.section-1 a{
+    font-size: 1.5rem;
+    padding: 10px;
+}
+.section-2{
+    transform:scale(0.9);
+    transition: 2s;
+    padding-top: 1vh;
+    width: 70%;
+}
+.section-2 h2{
+    font-size: 1.7rem;
+    padding-bottom: px;
+}
+.section-2 p{
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+    margin: 0;
+}
+.project{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-column-gap:20px ;
+}
+.section-2 a{
+    display: block;
+    padding: 5px;
+    font-size: 1.2rem;
+    padding-left: 0;
+    width: 100px;
+}
+hr{
+    height:3px ;
+}
+span{
+    color: dodgerblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.9rem;}
+.section-2 p:hover{
+    font-size: 1.3rem;
+    transition: .2s;
+    color: cornsilk;
+}
+.project img{
+    margin-bottom: 5px;
+    width: 120px;
+    height: 60px;
+    
+}
+
+.email:hover::before{
+    content:"Send Email: "
+    
+}
+@media(max-width:780px){
+    .grid-2{
+        grid-template-columns: 1fr;
+    }
+    .section-1{
+        padding: 0 0;
+        margin: 0 0;
+        padding-top: 5rem;
+       align-items: center;
+       justify-self: start;
+        padding-top:1.5rem ;
+    }
+    .section-2{
+        padding: 0;
+        padding-left: 1.5rem;
+        padding-top: 2rem;
+    }
+    .project{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
